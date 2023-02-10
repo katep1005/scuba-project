@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scuba Diving 🤿</title>
+  </head>
+  <style>
+         body {
+           background: #ececec;
+           font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+             sans-serif;
+           max-width: 100%;
+           margin: 10px;
+           padding: 10px;
+           display: block;
+         }
+
+         h1 {
+           font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+             sans-serif;
+           font-size: 100px;
+           text-align: center;
+           margin: 20px;
+           color: #00204a;
+                 ;
+         }
+         h2 {
+           font-size: 20px;
+           text-align: center;
+           background: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);e;
+           border-radius: 20px;
+           padding: 10px;
+           font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+             "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+             border-style:groove;
+             color: #142d4c;
+             font-weight: normal;
+         }
+
+         img {
+           display: block;
+           margin: 20px auto;
+           border-radius: 20px;
+         }
+         p {
+           text-align: left;
+           padding: 10px;
+         }
+
+         h4 {
+           text-align: center;
+           margin: 0;
+           color: #142d4c;
+         }
+         ul {
+           list-style: none;
+           display: inline;
+           padding: 0;
+           margin: 10px;
+           text-align: center;
+         }
+
+         a {
+           color:#00204a;
+           text-decoration: none;
+           font-size: 20px;
+           font-weight: normal;
+           margin: 0 auto;
+           display: block;
+         }
+
+         .mainContent {
+           font-size: 18px;
+
+           color: #385170;
+
+         }
+         .container {
+    background: radial-gradient(circle at 10% 20%, rgba(91, 173, 254, 0.46) 0%, rgba(91, 224, 254, 0.46) 47.2%, rgba(170, 254, 235, 0.43) 90%);
+           border-radius: 20px;
+           padding: 20px;
+           margin: 15px;
+         }
+
+         .footer {
+           text-align: center;
+           font-family: monospace;
+         }
+         button {
+           background: #9fd3c7;
+           color: #00204a;
+           display: block;
+           font-size: 18px;
+           font-weight: bold;
+           margin: 0 auto 30px auto;
+           padding: 20px 30px;
+           border: black;
+           border-radius: 25px;
+           box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+           transition: all 200ms ease-in-out;
+
+         }
+
+         button:hover {
+           background-color: #142d4c;
+           cursor: pointer;
+           color: white;
+         }
+
+         a:hover {
+           text-decoration: underline;
+           font-weight: bold;
+         }
+
+         strong {
+           text-decoration: underline;
+           color: #142d4c;
+
+         }
+         p {
+           line-height: 1.5;
+           text-align: center;
+           font-weight: normal;
+         }
+  </style>
+
+  <body>
+    <div class="container">
+      <h1>Scuba Diving</h1>
+      <h2>
+        "The sea, once it casts its spell, holds one in its net of wonder
+        forever"
+        <br />
+        - <em>Jacques Cousteau</em>
+      </h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/584/original/diver-roatan-best-beginner-antonio-busiello-scu1219.jpg?1663674410"
+        alt="Scuba Diving"
+        width="500"
+      />
+      <div class="mainContent">
+        <p>
+          Scuba diving is mainly done for the attraction of the unattainable
+          undersea world. It is one area of nature that mankind has not been
+          able to fully control, we simply are not able to breathe underwater.
+          Hence, scuba diving gives us an opportunity to be in that underwater
+          world, even if it is just for a limited amount of time. Of course, the
+          underwater world is beautiful as well, with many people opting for
+          scuba diving in Asia or scuba diving in the Red Sea or the Great
+          Barrier Reef, said to be some of the worlds best scuba diving
+          locations. The different colors and marine wildlife are so impressive
+          in all these locations that people find themselves returning over and
+          over again.
+        </p>
+        <h4>What does SCUBA stand for?</h4>
+        <ul>
+          <li><strong>S</strong>elf</li>
+          <li><strong>C</strong>ontained</li>
+          <li><strong>U</strong>nderwater</li>
+          <li><strong>B</strong>reathing</li>
+          <li><strong>A</strong>pparatus</li>
+        </ul>
+      </div>
+      <a
+        href="https://en.wikipedia.org/wiki/Scuba_diving"
+        target="_blank"
+        style="text-align: center"
+      >
+        Learn More!</a
+      >
+      <br />
+      <button>Try Diving! 🤿</button>
+      <br />
+      <hr />
+      <div class="footer">Coded by Kate Perry 🦈</div>
+    </div>
+
+    <script>
+      function tryDiving() {
+        let name = prompt("👋 What is your name?");
+        let experience = prompt("Have you ever been Scuba Diving? 🤿");
+        experience = experience.toLowerCase();
+
+        if (experience === "yes") {
+          alert("Happy diving " + name + "! 🐬");
+        } else {
+          alert("Book a try dive today " + name + "! 🐬");
+        }
+      }
+
+      let cityButton = document.querySelector("button");
+      cityButton.addEventListener("click", tryDiving);
+    </script>
+  </body>
+</html>
